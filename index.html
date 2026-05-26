@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Élite & Co. | Moda Elegante para Caballeros</title>
+  <meta name="description" content="Élite & Co. — La boutique de moda masculina más exclusiva. Trajes, camisas y accesorios de lujo para el caballero moderno." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== CURSOR PERSONALIZADO ========== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ========== PRELOADER ========== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">É</div>
+      <div class="preloader-line"></div>
+      <p class="preloader-text">Élite & Co.</p>
+    </div>
+  </div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-symbol">É</span>
+        <span class="logo-text">lite & Co.</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link">Inicio</a></li>
+        <li><a href="#coleccion" class="nav-link">Colección</a></li>
+        <li><a href="#mascot" class="nav-link">Nuestra Historia</a></li>
+        <li><a href="#productos" class="nav-link">Catálogo</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-icon-btn" id="cartBtn" aria-label="Carrito">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grain"></div>
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-tag reveal-fade">— Colección 2026 —</div>
+        <h1 class="hero-title reveal-up">
+          <span class="title-line">Viste con</span>
+          <span class="title-line italic">Elegancia</span>
+          <span class="title-line">Sin Igual</span>
+        </h1>
+        <p class="hero-subtitle reveal-fade">
+          Prendas diseñadas para el caballero que entiende que la primera impresión lo es todo.
+        </p>
+        <div class="hero-cta reveal-up">
+          <a href="#productos" class="btn-primary">Explorar Colección</a>
+          <a href="#mascot" class="btn-ghost">Conoce a Édouard</a>
+        </div>
+        <div class="hero-stats reveal-fade">
+          <div class="stat">
+            <span class="stat-num">15+</span>
+            <span class="stat-label">Años de Lujo</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">500+</span>
+            <span class="stat-label">Piezas Exclusivas</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">98%</span>
+            <span class="stat-label">Satisfacción</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image-wrap reveal-right">
+        <div class="hero-image-frame">
+          <img src="assets/mascot.png" alt="Édouard, el caballero Élite" class="hero-img" />
+          <div class="hero-img-badge">
+            <span>✦</span>
+            <p>Estilo<br/>Exclusivo</p>
+          </div>
+        </div>
+        <div class="hero-scroll-indicator">
+          <span>Scroll</span>
+          <div class="scroll-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MARQUEE BANNER ========== -->
+  <div class="marquee-wrapper">
+    <div class="marquee-track">
+      <span>ELEGANCIA</span><span>✦</span>
+      <span>EXCLUSIVIDAD</span><span>✦</span>
+      <span>CABALLEROS</span><span>✦</span>
+      <span>LUJO</span><span>✦</span>
+      <span>MODA 2026</span><span>✦</span>
+      <span>ÉLITE & CO.</span><span>✦</span>
+      <span>ELEGANCIA</span><span>✦</span>
+      <span>EXCLUSIVIDAD</span><span>✦</span>
+      <span>CABALLEROS</span><span>✦</span>
+      <span>LUJO</span><span>✦</span>
+      <span>MODA 2026</span><span>✦</span>
+      <span>ÉLITE & CO.</span><span>✦</span>
+    </div>
+  </div>
+
+  <!-- ========== COLECCIÓN DESTACADA ========== -->
+  <section class="coleccion" id="coleccion">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag reveal-fade">— Colección Primavera 2026 —</div>
+        <h2 class="section-title reveal-up">El Arte de Vestir Bien</h2>
+        <p class="section-desc reveal-fade">
+          Cada prenda, una obra maestra. Cada detalle, una declaración de estilo.
+        </p>
+      </div>
+      <div class="featured-grid reveal-up">
+        <div class="featured-card featured-large">
+          <div class="featured-img-wrap">
+            <img src="assets/suit.png" alt="Traje Élite Charcoal" />
+            <div class="featured-overlay">
+              <span class="featured-cat">Trajes</span>
+              <h3>Colección Signature</h3>
+              <p>Lana merino italiana de alta gama</p>
+              <a href="#" class="btn-overlay">Ver Pieza</a>
+            </div>
+          </div>
+        </div>
+        <div class="featured-card">
+          <div class="featured-img-wrap">
+            <img src="assets/shirt.png" alt="Camisa Oxford Premium" />
+            <div class="featured-overlay">
+              <span class="featured-cat">Camisas</span>
+              <h3>Oxford Premium</h3>
+              <p>Algodón egipcio 100%</p>
+              <a href="#" class="btn-overlay">Ver Pieza</a>
+            </div>
+          </div>
+        </div>
+        <div class="featured-card">
+          <div class="featured-img-wrap">
+            <img src="assets/shoes.png" alt="Oxford de Cuero Cognac" />
+            <div class="featured-overlay">
+              <span class="featured-cat">Calzado</span>
+              <h3>Oxford Cognac</h3>
+              <p>Cuero artesanal de primera calidad</p>
+              <a href="#" class="btn-overlay">Ver Pieza</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MASCOT SECTION ========== -->
+  <section class="mascot-section" id="mascot">
+    <div class="mascot-bg-decor">
+      <div class="decor-circle dc1"></div>
+      <div class="decor-circle dc2"></div>
+    </div>
+    <div class="container mascot-container">
+      <div class="mascot-image-col reveal-left">
+        <div class="mascot-frame">
+          <img src="assets/mascot.png" alt="Édouard, el embajador de Élite & Co." />
+          <div class="mascot-quote-bubble">
+            <p>"El estilo no es lo que llevas puesto. Es cómo te llevas tú mismo."</p>
+            <span>— Édouard</span>
+          </div>
+        </div>
+      </div>
+      <div class="mascot-text-col reveal-right">
+        <div class="section-tag">— Nuestro Embajador —</div>
+        <h2 class="section-title">Conoce a <em>Édouard</em></h2>
+        <p class="mascot-desc">
+          Édouard no es solo el rostro de <strong>Élite & Co.</strong> — es la personificación de todo lo que creemos. Un caballero de gusto impecable, portador de tradiciones, pero siempre mirando hacia el futuro de la moda masculina.
+        </p>
+        <p class="mascot-desc">
+          Desde 2010, Édouard ha guiado a miles de caballeros a descubrir su estilo auténtico, convirtiéndose en el símbolo de la elegancia sin esfuerzo aparente.
+        </p>
+        <div class="mascot-values">
+          <div class="value-item">
+            <div class="value-icon">✦</div>
+            <div>
+              <h4>Tradición Artesanal</h4>
+              <p>Cada prenda es una herencia viva del arte sastre.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">✦</div>
+            <div>
+              <h4>Modernidad Refinada</h4>
+              <p>Clásicos que dialogan con la vanguardia actual.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">✦</div>
+            <div>
+              <h4>El Caballero Primero</h4>
+              <p>Tu satisfacción y confianza, nuestra obsesión.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRODUCTOS / CATÁLOGO ========== -->
+  <section class="productos" id="productos">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag reveal-fade">— Catálogo 2026 —</div>
+        <h2 class="section-title reveal-up">Piezas Disponibles</h2>
+        <p class="section-desc reveal-fade">Stock exclusivo en temporada. Piezas de edición limitada.</p>
+      </div>
+
+      <!-- Filtros -->
+      <div class="filter-bar reveal-fade">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="trajes">Trajes</button>
+        <button class="filter-btn" data-filter="camisas">Camisas</button>
+        <button class="filter-btn" data-filter="calzado">Calzado</button>
+        <button class="filter-btn" data-filter="blazers">Blazers</button>
+        <button class="filter-btn" data-filter="accesorios">Accesorios</button>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+
+        <!-- Producto 1 -->
+        <div class="product-card reveal-up" data-category="trajes">
+          <div class="product-img-wrap">
+            <img src="assets/suit.png" alt="Traje Charcoal Signature" class="product-img" />
+            <div class="product-actions">
+              <button class="prod-action-btn wishlist-btn" title="Favorito">♡</button>
+              <button class="prod-action-btn add-cart-btn" data-name="Traje Charcoal Signature" data-price="1290">Añadir al Carrito</button>
+            </div>
+            <span class="product-badge">Bestseller</span>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">Trajes</span>
+            <h3 class="product-name">Traje Charcoal Signature</h3>
+            <p class="product-detail">Lana merino italiana · Corte slim fit</p>
+            <div class="product-footer">
+              <span class="product-price">$1,290</span>
+              <div class="product-sizes">
+                <span class="size">38</span><span class="size">40</span><span class="size active">42</span><span class="size">44</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="product-card reveal-up" data-category="camisas">
+          <div class="product-img-wrap">
+            <img src="assets/shirt.png" alt="Camisa Oxford Blanca Premium" class="product-img" />
+            <div class="product-actions">
+              <button class="prod-action-btn wishlist-btn" title="Favorito">♡</button>
+              <button class="prod-action-btn add-cart-btn" data-name="Camisa Oxford Premium" data-price="189">Añadir al Carrito</button>
+            </div>
+            <span class="product-badge new-badge">Nuevo</span>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">Camisas</span>
+            <h3 class="product-name">Camisa Oxford Premium</h3>
+            <p class="product-detail">Algodón egipcio 100% · Cuello italiano</p>
+            <div class="product-footer">
+              <span class="product-price">$189</span>
+              <div class="product-sizes">
+                <span class="size">S</span><span class="size active">M</span><span class="size">L</span><span class="size">XL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="product-card reveal-up" data-category="calzado">
+          <div class="product-img-wrap">
+            <img src="assets/shoes.png" alt="Oxford Cognac Artesanal" class="product-img" />
+            <div class="product-actions">
+              <button class="prod-action-btn wishlist-btn" title="Favorito">♡</button>
+              <button class="prod-action-btn add-cart-btn" data-name="Oxford Cognac Artesanal" data-price="490">Añadir al Carrito</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">Calzado</span>
+            <h3 class="product-name">Oxford Cognac Artesanal</h3>
+            <p class="product-detail">Cuero de becerro · Suela de cuero</p>
+            <div class="product-footer">
+              <span class="product-price">$490</span>
+              <div class="product-sizes">
+                <span class="size">40</span><span class="size">41</span><span class="size active">42</span><span class="size">43</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="product-card reveal-up" data-category="blazers">
+          <div class="product-img-wrap">
+            <img src="assets/blazer.png" alt="Blazer Camel Merino" class="product-img" />
+            <div class="product-actions">
+              <button class="prod-action-btn wishlist-btn" title="Favorito">♡</button>
+              <button class="prod-action-btn add-cart-btn" data-name="Blazer Camel Merino" data-price="650">Añadir al Carrito</button>
+            </div>
+            <span class="product-badge">Limited</span>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">Blazers</span>
+            <h3 class="product-name">Blazer Camel Merino</h3>
+            <p class="product-detail">Lana merino 100% · Forro de seda</p>
+            <div class="product-footer">
+              <span class="product-price">$650</span>
+              <div class="product-sizes">
+                <span class="size">S</span><span class="size active">M</span><span class="size">L</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="product-card reveal-up" data-category="accesorios">
+          <div class="product-img-wrap">
+            <img src="assets/suit.png" alt="Corbata Seda Bordeaux" class="product-img" style="object-fit: contain; padding: 2rem; background: #f5ede0;" />
+            <div class="product-actions">
+              <button class="prod-action-btn wishlist-btn" title="Favorito">♡</button>
+              <button class="prod-action-btn add-cart-btn" data-name="Corbata Seda Bordeaux" data-price="120">Añadir al Carrito</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">Accesorios</span>
+            <h3 class="product-name">Corbata Seda Bordeaux</h3>
+            <p class="product-detail">Seda italiana 100% · Tejido jacquard</p>
+            <div class="product-footer">
+              <span class="product-price">$120</span>
+              <div class="product-sizes">
+                <span class="size active">Única</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="product-card reveal-up" data-category="camisas">
+          <div class="product-img-wrap">
+            <img src="assets/shirt.png" alt="Camisa Lino Crema" class="product-img" />
+            <div class="product-actions">
+              <button class="prod-action-btn wishlist-btn" title="Favorito">♡</button>
+              <button class="prod-action-btn add-cart-btn" data-name="Camisa Lino Crema" data-price="159">Añadir al Carrito</button>
+            </div>
+            <span class="product-badge new-badge">Nuevo</span>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">Camisas</span>
+            <h3 class="product-name">Camisa Lino Crema</h3>
+            <p class="product-detail">Lino premium · Corte regular contemporáneo</p>
+            <div class="product-footer">
+              <span class="product-price">$159</span>
+              <div class="product-sizes">
+                <span class="size">S</span><span class="size">M</span><span class="size active">L</span><span class="size">XL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BANNER EXPERIENCIA ========== -->
+  <section class="experience-banner">
+    <div class="exp-content reveal-up">
+      <div class="exp-icon">✦</div>
+      <h2>Una Experiencia de Compra de Otro Nivel</h2>
+      <p>Visítanos en nuestra boutique o agenda una asesoría personalizada con Édouard.</p>
+      <a href="#contacto" class="btn-primary">Agenda tu Cita</a>
+    </div>
+    <div class="exp-mascot">
+      <img src="assets/mascot.png" alt="Édouard invitándote" />
+    </div>
+  </section>
+
+  <!-- ========== CONTACTO ========== -->
+  <section class="contacto" id="contacto">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag reveal-fade">— Contáctanos —</div>
+        <h2 class="section-title reveal-up">Visítanos o Escríbenos</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h4>Boutique Principal</h4>
+              <p>Av. Paseo de la Reforma 400, Col. Cuauhtémoc, CDMX</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <h4>Horario de Atención</h4>
+              <p>Lunes a Sábado: 10:00 – 20:00<br/>Domingo: 11:00 – 17:00</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <h4>Teléfono</h4>
+              <p>+52 (55) 1234-5678</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <p>contacto@eliteyco.mx</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal-right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Juan García" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Correo</label>
+                <input type="email" id="email" placeholder="juan@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="asunto">Asunto</label>
+              <select id="asunto">
+                <option value="">Selecciona un tema...</option>
+                <option>Asesoría Personalizada</option>
+                <option>Consulta de Tallas</option>
+                <option>Pedido Especial</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" rows="4" placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full" id="submitBtn">Enviar Mensaje</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <span class="logo-symbol">É</span>
+            <span class="logo-text">lite & Co.</span>
+          </div>
+          <p>La casa de moda del caballero elegante desde 2010. Tradición, calidad y estilo sin concesiones.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Colecciones</h4>
+          <ul>
+            <li><a href="#">Trajes & Smoking</a></li>
+            <li><a href="#">Camisas de Vestir</a></li>
+            <li><a href="#">Blazers & Sacos</a></li>
+            <li><a href="#">Calzado Premium</a></li>
+            <li><a href="#">Accesorios</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>La Empresa</h4>
+          <ul>
+            <li><a href="#">Nuestra Historia</a></li>
+            <li><a href="#">Édouard & Nosotros</a></li>
+            <li><a href="#">Política de Tallas</a></li>
+            <li><a href="#">Envíos</a></li>
+            <li><a href="#">Devoluciones</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Élite & Co. Todos los derechos reservados. Hecho con elegancia.</p>
+        <p class="footer-sig">Édouard siempre viste bien. ✦</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== CART DRAWER ========== -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3>Mi Carrito</h3>
+      <button class="cart-close" id="cartClose">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">
+        <p>Édouard te invita a explorar la colección.</p>
+        <img src="assets/mascot.png" alt="Carrito vacío" style="width:120px;opacity:0.5;margin-top:1rem;" />
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none;">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cartTotal">$0</span>
+      </div>
+      <button class="btn-primary btn-full">Proceder al Pago</button>
+    </div>
+  </div>
+
+  <!-- ========== TOAST NOTIFICATION ========== -->
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
